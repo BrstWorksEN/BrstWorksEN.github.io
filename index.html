@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrstWorks - Music & Audio</title>
+    <meta name="description" content="BrstWorks Official Website.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:url" content="https://BrstWorks.eu/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BrstWorks Web">
+    <meta name="copyright" content="© 2025 BrstWorks">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- debile co tady ctes kod  -->
+    <style>
+        /* Essential icons inline for faster loading */
+        .fas::before, .fab::before { font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands'; font-weight: 900; }
+        .fa-play::before { content: "\f04b"; }
+        .fa-pause::before { content: "\f04c"; }
+        .fa-step-backward::before { content: "\f048"; }
+        .fa-step-forward::before { content: "\f051"; }
+        .fa-envelope::before { content: "\f0e0"; }
+        .fab { font-weight: 400; }
+        .fa-spotify::before { content: "\f1bc"; }
+        .fa-soundcloud::before { content: "\f1be"; }
+        .fa-youtube::before { content: "\f167"; }
+        .fa-instagram::before { content: "\f16d"; }
+        .fa-twitter::before { content: "\f099"; }
+
+        /* jako pouzil jsem ai a co jako*/
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand-logo {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            display: block;
+        }
+        .brand-text { line-height: 1; }
+        .brand-title { margin: 0; font-size: 1.1rem; }
+        .brand-subtitle { display: block; font-size: 0.8rem; color: #666; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                   
+                    <div class="brand-text">
+                        <h1 class="brand-title">BrstWorks</h1>
+                        <span class="brand-subtitle">Music & Audio</span>
+                    </div>
+                    <a class="lang-switch" href="https://brstworks.github.io/" rel="alternate" hreflang="cs" title="Přepnout na češtinu" aria-label="Switch to Czech">Click to switch to Czech</a>
+              
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#music" class="nav-link">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">BrstWorks</h1>
+            <p class="hero-subtitle">ILWSM & Brst & F.M.cz & D0ndrrïpp</p>
+            <p class="hero-description">Discover our latest tracks yo</p>
+            <button class="cta-button" onclick="scrollToSection('music')">
+                <i class="fas fa-play"></i> Explore Music
+            </button>
+        </div>
+        <div class="hero-visual">
+            <div class="sound-wave">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section id="music" class="music-section">
+        <div class="container">
+            <h2 class="section-title">Latest Tracks</h2>
+            
+            <!-- Music Player -->
+            <div class="music-player">
+                <div class="player-display">
+                    <div class="track-info">
+                        <div class="track-cover-container">
+                            <img src="" alt="Track Cover" class="track-cover" id="trackCover" style="display: none;">
+                            <div class="cover-placeholder" style="
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 10px;
+                                background: linear-gradient(45deg, #4ecdc4, #ff6b6b);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 1.5rem;
+                            ">♪</div>
+                        </div>
+                        <div class="track-details">
+                            <h3 class="track-title" id="trackTitle">Select a track to play</h3>
+                            <p class="track-artist" id="trackArtist">BrstWorks</p>
+                        </div>
+                    </div>
+                    <div class="player-controls">
+                        <button class="control-btn" id="prevBtn">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" id="playBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-btn" id="nextBtn">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                        <div class="volume-control" id="volumeControl">
+    <button class="volume-btn" id="muteBtn" aria-label="Mute/unmute" title="Mute / Unmute">
+        <i class="fas fa-volume-up" id="volumeIcon" aria-hidden="true"></i>
+    </button>
+    <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span class="time" id="currentTime">0:00</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <span class="time" id="duration">0:00</span>
+                </div>
+                <audio id="audio" preload="none"></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+                <h3 class="playlist-title">Playlist</h3>
+                <div class="track-list" id="trackList">
+                    <div class="track-item" data-src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav">
+                        <div class="track-number">01</div>
+                        <div class="track-info-small">
+                            <div class="track-name">Electronic Dreams</div>
+                            <div class="track-duration">3:45</div>
+                        </div>
+                        <button class="play-track-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="track-item" data-src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav">
+                        <div class="track-number">02</div>
+                        <div class="track-info-small">
+                            <div class="track-name">Midnight Vibes</div>
+                            <div class="track-duration">4:12</div>
+                        </div>
+                        <button class="play-track-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="track-item" data-src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav">
+                        <div class="track-number">03</div>
+                        <div class="track-info-small">
+                            <div class="track-name">Urban Pulse</div>
+                            <div class="track-duration">2:58</div>
+                        </div>
+                        <button class="play-track-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="track-item" data-src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav">
+                        <div class="track-number">04</div>
+                        <div class="track-info-small">
+                            <div class="track-name">Chill Waves</div>
+                            <div class="track-duration">5:23</div>
+                        </div>
+                        <button class="play-track-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About BrstWorks</h2>
+                    <p class="about-description">
+                        BrstWorks is an organization that manages ILWSM, Brst, Frantisek Macak and D0ndrripp,
+                        Basically its just music producers under one shared name for some purposes like collabs.   
+                        Based in Czech Republic, Liberec. Creating crazy shit.</p>
+                    <p class="about-description">
+                        We make Hip-Hop, Rap, Trap, and also Rock, Alt. Rock, but also Techno and Trance/Psy-Trance.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Tracks Released</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30K+</span>
+                            <span class="stat-label">Listeners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Active</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="sound-visualization">
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                        <div class="viz-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>Interested in working together or have questions about our music?...  (Or if you found any bugs or anything wrong with this website or you have some ideas what to add/change) Email us!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>BrstOfficial@BrstWorks.eu</span>
+                        </div>
+                        <div class="contact-method" style="margin-top:6px;">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+420 734 835 374" style="color:inherit; text-decoration:none; margin-left:8px;">+420 734 835 374</a>
+                        </div>
+                        <!-- Donations / Bank account (English) - insert inside .contact-methods near email/phone -->
+<div class="contact-method" style="margin-top:6px;">
+  <i class="fas fa-university" aria-hidden="true"></i>
+  <div class="bank-info" style="margin-left:8px;">
+    <div class="bank-label" style="font-weight:600;">Donations</div>
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <span class="bank-account" id="donationIban">IBAN: CZ42 5500 0000 0032 2305 9003</span>
+      <button class="copy-btn" data-copy-target="donationIban" type="button" aria-label="Copy IBAN">Copy</button>
+    </div>
+    <div class="bank-note" style="font-size:0.85rem;color:#aaa;margin-top:4px;">
+      Please include your name and reason for donation in the transfer note.
+    </div>
+  </div>
+</div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="simple-contact">
+                        <h4>Get in Touch</h4>
+                        <p>Ready to collaborate or have questions? Send us an email!</p>
+                        <a href="mailto:BrstOfficial@BrstWorks.eu?subject=Contact from BrstWorks Website&body=Hi there! I'd like to get in touch about..." class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BrstWorks</h3>
+                    <p>Creating crazy shit.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#music">Music</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/brstworks.eu" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BrstWorks" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BrstWorks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fallback logic: if local logo.png is missing, replace with inline SVG so a logo is always visible -->
+    <script>
+        (function () {
+            const img = document.getElementById('siteLogo');
+            if (!img) return;
+
+            // try HEAD fetch to verify file exists (works on http/https)
+            const logoPath = img.getAttribute('src') || 'assets/images/logo.png';
+
+            function setSvgFallback() {
+                const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" preserveAspectRatio="xMidYMid meet" role="img" aria-label="BrstWorks logo">
+  <defs>
+    <linearGradient id="bwGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#4ecdc4"/>
+      <stop offset="1" stop-color="#ff6b6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#bwGrad)"/>
+  <path d="M16 44 L28 20 L36 40 L48 18" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="12" cy="18" r="2.5" fill="#fff"/>
+</svg>`;
+                img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+                img.style.objectFit = 'contain';
+            }
+
+            // If served over file://, fetch HEAD will fail — skip to fallback check
+            if (location.protocol === 'file:') {
+                // rely on naturalWidth to detect missing image after a short delay
+                img.addEventListener('error', setSvgFallback);
+                setTimeout(() => {
+                    if (!img.naturalWidth) setSvgFallback();
+                }, 250);
+                return;
+            }
+
+            // Try HEAD first, fall back to GET on some servers
+            fetch(logoPath, { method: 'HEAD' }).then(res => {
+                if (!res.ok) setSvgFallback();
+            }).catch(() => {
+                // try GET as some hosts don't support HEAD properly
+                fetch(logoPath, { method: 'GET' }).then(res => {
+                    if (!res.ok) setSvgFallback();
+                }).catch(() => {
+                    setSvgFallback();
+                });
+            });
+        })();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
