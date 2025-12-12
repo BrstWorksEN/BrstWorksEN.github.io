@@ -13,11 +13,11 @@ const playlist = [
         src: 'assets/audio/danrapp.mp3'
     },
     {
-        title: 'Prototype Beat 3(instrumental)',
-        artist: 'BrstOfficial',
-        duration: '4:14',
-        cover: 'assets/images/null.png',
-        src: 'assets/audio/prototypebrst3.mp3'
+        title: '"DEMO" Tak co furt hledáš ve svý (hlavě)',
+        artist: 'Frantisek Macak (Brst)',
+        duration: '3:04',
+        cover: 'assets/images/obrazek.png',
+        src: 'assets/audio/takco.mp3'
     },
     {
         title: 'Tekkenn',
