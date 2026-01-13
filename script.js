@@ -6,11 +6,11 @@ let navToggle, navMenu, contactForm;
 // vsechno je to ai no tak co jako ale ta hudba je real
 const playlist = [
     {
-        title: 'BEEN THERE, DONE THAT',
+        title: 'TIDY NOTES',
         artist: 'D0ndrripp (prod. Brst)',
-        duration: '1:46',
+        duration: '1:59',
         cover: 'assets/images/kominik.png',
-        src: 'assets/audio/danrapp.mp3'
+        src: 'assets/audio/danielel.mp3'
     },
     {
         title: '"DEMO" Tak co furt hledáš ve svý (hlavě)',
@@ -20,18 +20,18 @@ const playlist = [
         src: 'assets/audio/takco.mp3'
     },
     {
-        title: 'Tekkenn',
-        artist: 'ILWSM',
-        duration: '3:46',
-        cover: 'assets/images/Tekkenn.jpg',
-        src: 'assets/audio/Tekkenn.wav'
+        title: 'DEMO BEAT',
+        artist: 'BrstOfficial',
+        duration: '4:05',
+        cover: 'assets/images/obrazek.png',
+        src: 'assets/audio/demobeat.mp3'
     },
     {
-        title: 'Space',
+        title: 'Acidline V2',
         artist: 'ILWSM',
-        duration: '3:56',
+        duration: '3:08',
         cover: 'assets/images/space.png',
-        src: 'assets/audio/space-ilwsm.mp3'
+        src: 'assets/audio/acid.mp3'
     }
 ];
 
